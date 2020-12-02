@@ -38,7 +38,6 @@ class Empregado
     {
       Salario = s;
     }
-
   }
 
   public Empregado(string n, string sn, double s)
