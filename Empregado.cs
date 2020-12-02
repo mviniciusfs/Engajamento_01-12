@@ -11,6 +11,11 @@ class Empregado
     return Nome;
   }
 
+  public void Setnome(string n)
+  {
+    Nome = n;
+  }
+
   public string Getsobrenome()
   {
     return Sobrenome;
@@ -30,8 +35,7 @@ class Empregado
   {
     if(s<=0)
     {
-      throw new Exception("Salário Invalido"); 
-      
+      throw new Exception("Salário Invalido");       
     }
 
     else
@@ -52,6 +56,11 @@ class Empregado
     Nome = "Nomade";
     Sobrenome = "Anonimo";
     Salario = 1000;
+  }
+
+  public static double aumentaSalario(double s)
+  {
+    return s * 1;
   }
 
   

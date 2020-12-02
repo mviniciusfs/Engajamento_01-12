@@ -16,6 +16,7 @@ class MainClass {
       {
         Console.Write("Digite o Salário: R$" );
         anonimo.Salario = double.Parse(Console.ReadLine());
+        anonimo.Setsalario(anonimo.Salario);
         chave = false;
       }
 
@@ -26,6 +27,13 @@ class MainClass {
       }
     }
     while(chave);
+
+    Console.Write("Valor novo do salário R$");
+    anonimo.Salario = double.Parse(Console.ReadLine());
+
+    anonimo.Setsalario(Empregado.aumentaSalario(anonimo.Getsalario()));
+
+    Console.WriteLine("Novo Salário R${0}",anonimo.Getsalario());
     
     
   }
